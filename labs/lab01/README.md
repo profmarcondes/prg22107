@@ -1,4 +1,4 @@
-# Laborátorio 01: Implementando classes (abstrações)
+# Laboratório 01: Implementando classes (abstrações)
 
 ## Exercício 01
 
