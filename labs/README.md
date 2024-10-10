@@ -1,3 +1,3 @@
-# Laboratórios da Disciplina
+# Laboratórios de prática de programação
 
-Under construction...
+[Lab01](lab01/README.md): Implementando classes (abstrações)
