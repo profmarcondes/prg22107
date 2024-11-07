@@ -21,11 +21,11 @@ Lembre-se sempre que o caminho para a imagem ```src``` deve ser relativo a pasta
 
 Para centralizar a imagem, a marca HTML ```<center>``` poderá ser utilizada
 
-<center>
+<div align="center">
     <img src="ifsc-logo.png" 
          width="30%" 
          style="padding: 10px">
-</center>
+</div>
 
 ```
 <center>
