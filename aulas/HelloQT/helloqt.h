@@ -11,6 +11,8 @@ public:
     HelloQT(QWidget *parent = nullptr);
     ~HelloQT();
 
+public slots:
+    void togleCheckbox();
 
 private:
     QLabel * label;

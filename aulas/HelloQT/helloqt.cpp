@@ -4,16 +4,19 @@ HelloQT::HelloQT(QWidget *parent)
     : QWidget(parent)
 {
     check = new QCheckBox("check");
+    QObject::connect(check, SIGNAL(stateChanged(int)),
+                     this, SLOT(togleCheckbox()));
 
     label = new QLabel("<h2>HelloQT</h2>");
 
     close = new QPushButton("Close");
     QObject::connect(close, SIGNAL(clicked()),
-                     this, SLOT(close()));
+                     qApp, SLOT(quit()));
+    close->setEnabled(false);
 
     about = new QPushButton("About");
     QObject::connect(about, SIGNAL(clicked()),
-                     this, SLOT(close()));
+                     qApp, SLOT(aboutQt()));
 
     spin = new QSpinBox();
     slider = new QSlider(Qt::Horizontal);
@@ -47,3 +50,7 @@ HelloQT::HelloQT(QWidget *parent)
 }
 
 HelloQT::~HelloQT() {}
+
+void HelloQT::togleCheckbox() {
+    close->setEnabled(check->isChecked());
+}
