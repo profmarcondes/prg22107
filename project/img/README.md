@@ -17,22 +17,25 @@ exemplo abaixo:
 
 A opção padding, adiciona um espaçamento entre a imagem e o texto.
 
-Lembre-se sempre que o caminho para a imagem ```src``` deve ser relativo a pasta em que o arquivo Markdown esta
+Lembre-se sempre que o caminho para a imagem ```src``` deve ser relativo a pasta
+em que o arquivo Markdown está localizado.
 
-Para centralizar a imagem, a marca HTML ```<center>``` poderá ser utilizada
+Para centralizar a imagem, a marca HTML ```<div align="center">``` poderá ser
+utilizada.
 
-<center>
+<div align="center">
     <img src="ifsc-logo.png" 
          width="30%" 
          style="padding: 10px">
-</center>
+</div>
 
 ```
-<center>
+<div align="center">
     <img src="ifsc-logo.png" 
          width="30%" 
          style="padding: 10px">
-</center>
+</div>
 ```
 
-Lembre-se, você sempre pode inserir marcas HTML para deixar a formação do seu arquivo Markdown mais rica.
+Lembre-se, você sempre pode inserir marcas HTML para deixar a formação do seu
+arquivo Markdown mais rica.
