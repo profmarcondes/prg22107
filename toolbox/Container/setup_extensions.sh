@@ -10,5 +10,6 @@ code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.cpptools-extension-pack
 code --install-extension ms-vscode.cpptools-themes
 code --install-extension theumletteam.umlet
-code --install-extension twxs.cmake
+
+tar -C / -zxvf /install/code-templates.tgz
 
