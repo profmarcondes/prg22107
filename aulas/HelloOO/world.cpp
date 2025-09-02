@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+#include "thering.h"
+
 void World::sayHello(){
 	counter++;
 	say("Hello");
@@ -10,6 +12,7 @@ void World::sayHello(){
 void World::sayGoodbye(){
 	counter--;
 	say("Goodbye");
+	TheRing::getInstance()->sayIt();
 }
 
 void World::say(string msg){
