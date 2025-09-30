@@ -14,9 +14,15 @@ Possíveis requisitos funcionais e não-funcionais podem ser elencados aqui.
 
 Apresentar o diagram de casos de uso, identificando as funcionalidades do sistema assim como os atores envolvidos
 
+<div align="center">
+    <img src="img/use_case.svg">
+</div>
+
 ### Detalhamento dos casos de uso
 
-[UC01: Jogar Hangman](uc01.md)
+[UC01: Jogar](uc01.md)
+
+[UC02: Encerrar](uc02.md)
  
 ## Diagrama de Domínio do problema
 
