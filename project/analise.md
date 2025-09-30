@@ -12,9 +12,7 @@ Possíveis requisitos funcionais e não-funcionais podem ser elencados aqui.
 
 ## Diagrama de Casos de Uso
 
-Apresentar o diagram de casos de uso, identificando as funcionalidades do
-sistema assim como os atores envolvidos
-
+Apresentar o diagram de casos de uso, identificando as funcionalidades do sistema assim como os atores envolvidos
 
 ### Detalhamento dos casos de uso
 
