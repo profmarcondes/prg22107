@@ -1,4 +1,5 @@
 #include <iostream>
+#include "world.h"
 
 using namespace std;
 
@@ -9,38 +10,12 @@ namespace ifsc {
 	string msg = "Hello IFSC!";
 };
 
-class World {
-private:
-	string name;
-
-public:
-	string getName();
-	void setName(string value);
-	void sayHello();
-
-};
-
 string name = "hugo";
 string tmp = "marcondes";
 
 string fullname = name + tmp;
 
-string World::getName() {
-	cout << ::name << " / " << name << endl;
-	return name;
-}
-
-void World::setName(string name) {
-	if(name.size())
-	this->name = name;
-}
-
-void World::sayHello(){
-	cout << "Hello " << this->name << "!" << endl;
-}
-
-World global_obj;
-
+World global_obj("Global World");
 
 int main (int argc, char* argv[]) {
 
@@ -52,17 +27,17 @@ int main (int argc, char* argv[]) {
 	cout << ifsc::msg << endl;
 	cout << value << std::endl;
 
-	World obj1;
+	World obj1;//("Obj1 world");
 
 	//obj1.name = "Hugo";
 	obj1.sayHello();
 
-	global_obj.setName("Global World");
+	//global_obj.name("Global World");
 	global_obj.sayHello();
 
-	World * ptr = new World;
+	World * ptr = new World("Ptr World");
 
-	ptr->setName("ptr World");
+	//ptr->name("ptr World");
 	ptr->sayHello();
 
 	return 0;
